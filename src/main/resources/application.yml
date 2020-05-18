@@ -4,7 +4,8 @@ spring:
 eureka:
    client:
       registerWithEureka: false
-      fetchRegistry: false          
+      fetchRegistry: false
+      service-url:
+        defaultZone: http://localhost:9090/eureka
 server:
-    port: 8671        
-          
+    port: 9090
